@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "AI engineers", "Web Developer", "Collaborative" ];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,20 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Jaekyeong(Joy)`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Currently, I am a Software Engineering Technology student at Centennial College majoring in Software Engineering Technology - AI. Through my academic program and three years of professional experience as a Java developer in Big Data and Security, I have demonstrated skills in HTML, CSS, JavaScript, C#, Java, Python, and MySQL/SQL, MariaDB, as well as foundational knowledge of Agile practices and quality assurance. In my current program, I am broadening my knowledge by increasing my understanding of Big Data, machine learning, and algorithmic concepts. </p>
+                <p><b>A student who is studying Software Engineering Technology - AI</b><br></br>
+                    School:  Centennial College<br></br>
+                    Expected Graduation: December 2025<br></br><br></br>
+                    <b>[Experience - Co-op/worker]</b><br></br>
+                    Role: Co-op developer<br></br>
+                    Company: Children, Youth & Social Services, Government Administration, Toronto<br></br>
+                    Period: Jan, 2024 - April, 2024<br></br><br></br>
+                    3 years+ of experience as a back-end developer in the big data, security field in South Korea<br></br><br></br>
+                    <b>[Interests]</b><br></br>
+                    AI engineer, Software Web Development<br></br><br></br>
+                    <b>[Skills]</b><br></br>
+                    Web: HTML, CSS, JavaScript, C#, Java, Python,MySQL/SQL, MariaDB,<br></br>
+                    Operating Systems(OS): Linux/Unix (CentOS), Window<br></br>
+                    Languages: Java, Python </p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
